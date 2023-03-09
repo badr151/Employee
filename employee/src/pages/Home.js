@@ -1,6 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 export default function Home() {
+
+    const [users,SetUser]=useState([])
+
+    useEffect(()=>{
+        loeadUsers();
+    },[]);
+
+    const loeadUsers=async()=>{
+        const result=await axios.get("http://localhost:8080/Api/employees")
+        console.log(result);
+    }
+
   return (
     <div className='container'>
         <div className='py-4'>
