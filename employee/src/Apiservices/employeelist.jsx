@@ -24,15 +24,14 @@ const productServices = {
       .catch((err) => console.log(err));
   },
 
-
- editById(id, changes) {
-  return axios
-    .put(
-      `http://localhost:8080/Api/114f073f-1fa1-4289-98a6-f758f76c8bd0${id}`,
-      changes
-    )
-    .then((response) => response.data);
-},
+  editById(id, changes) {
+    return axios
+      .put(
+        `http://localhost:8080/Api/114f073f-1fa1-4289-98a6-f758f76c8bd0${id}`,
+        changes
+      )
+      .then((response) => response.data);
+  },
 };
 
 export default employeelist;

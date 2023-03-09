@@ -1,8 +1,7 @@
 import axios from "axios";
 import employeelist from "./employeelist";
 
-const apiFavs =
-  "http://localhost:8080/Api/employees";
+const apiFavs = "http://localhost:8080/Api/employees";
 
 const favoriteServices = {
   getAll() {
